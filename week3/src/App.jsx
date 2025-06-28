@@ -5,6 +5,7 @@ import Button from './components/Button';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import TaskManager from './components/TaskManager';
+import ApiData from './components/ApiData';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,14 +33,10 @@ function App() {
         <div className="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg p-6">
           <h2 className="text-2xl font-bold mb-4">API Data</h2>
           <p className="text-gray-500 dark:text-gray-400">
-            Fetch and display data from an API here
+            <ApiData />
           </p>
         </div>
       </main>
-    <div className="bg-blue-600 text-white text-center p-4">
-  Tailwind is finally working 🎉
-</div>
-
       {/* Footer */}
       <Footer />
     </div>
